@@ -1,0 +1,149 @@
+.layout{
+    display: flex;
+    width: 100%;
+}
+
+.content-layout{
+    width: 100%;
+}
+
+.menu{
+    padding: 17px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+
+.menu-left{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.menu-left i{
+    font-size: 24px;
+}
+
+.menu-left div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu-left div input{
+   border-radius: 7px;
+   border: solid 1px #7A7F8C;
+   padding: 10px 45px;
+
+}
+
+.menu-left div i {
+    position: absolute;
+    margin-left: 15px;
+    top: 20%;
+    left: 0;
+    font-size: 18px;
+}
+
+.menu-left ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+}
+
+.menu-left ul li{
+    position: relative;
+}
+
+.menu-left ul li div{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #F35958;
+    bottom: 3px;
+    right: -2px;
+}
+
+.menu-left ul li i{
+    color: #7A7F8C;
+    font-size: 22px;
+}
+
+.menu-left ul div{
+    display: flex;
+    align-items: center;
+    background: #E1E1E1;
+    height: 16px;
+    width: 1px;
+}
+
+.menu-right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu-avatar{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    color: #7A7F8C;
+}
+
+.menu-avatar i{
+    scale: 160%;
+}
+
+.menu-avatar div{
+    position: absolute;
+    bottom: -1px;
+    right: -2px;
+    width: 14px;
+    height: 14px;
+    background-color: #0AA699;
+    border: solid 2px white;
+    border-radius: 100%;
+}
+
+.menu-settings{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #7A7F8C;
+    font-size: 20px;
+}
+
+.menu-settings div{
+    width: 1px; 
+    height: 15px;
+    background: #E1E1E1;
+}
+
+.content-wrapper{
+    padding: 33px 26px;
+}
+
+.content-wrapper table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content-wrapper table td, th {
+    border: 1px solid #e9e9e9;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .content-wrapper table  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
