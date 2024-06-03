@@ -1,4 +1,12 @@
-<?php require_once './app/includes/layout.php'; ?>
+<?php 
+    require_once './app/config/unauth.php';
+    require_once './public/includes/layout.php';
+    require_once './app/classes/Beacon.php';
+
+    $beacons = new Beacon();
+
+    $res = $beacons->fetchBeacons();
+ ?>
 
         <table>
             <tr>
@@ -9,22 +17,16 @@
                 <th>Created date</th>
                 <th>Action</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>Test4</td>
-                <td>21</td>
-                <td>2</td>
-                <td>3.3.2024</td>
-                <td><a href="#">See More</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Test6</td>
-                <td>2</td>
-                <td>12</td>
-                <td>3.3.2024</td>
-                <td><a href="#">See More</a></td>
-            </tr>
+            <?php foreach ($res as $row) {
+            echo "<tr>";
+            echo "<td>" . $row['id'] . "</td>";
+            echo "<td>" . $row['name'] . "</td>";
+            echo "<td>" . $row['freq'] . "</td>";
+            echo "<td>" . $row['join_count'] . "</td>"; 
+            echo "<td>" . $row['created_at'] . "</td>";
+            echo "<td><a href='./beacon.php?id=" . $row['id'] . "'>" . "View Details" . "</a></td>"; 
+            echo "</tr>";
+            }?>
         </table>
            
-<?php require_once './app/includes/footer.php'; ?>
+<?php require_once './public/includes/footer.php'; ?>

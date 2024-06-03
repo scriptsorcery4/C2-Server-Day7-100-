@@ -1,4 +1,7 @@
-<?php require_once './app/includes/layout.php'; ?>
+<?php 
+    require_once './app/config/unauth.php';
+    require_once './public/includes/layout.php';       
+?>
 
         <table>
             <tr>
@@ -24,4 +27,4 @@
             </tr>
         </table>
            
-<?php require_once './app/includes/footer.php'; ?>
+<?php require_once './public/includes/footer.php'; ?>

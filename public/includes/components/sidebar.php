@@ -21,7 +21,7 @@
                 </div>
                 </div>
                 <div class='details'>
-                    <h4>Max Williams</h4>
+                    <h4><?php echo $_SESSION['admin_username'];?></h4>
                     <p>Life goes on...</p>
                 </div>
             </div>
@@ -35,7 +35,7 @@
 
                         </li>
                     </a>
-                    <a href="./beacon.php">
+                    <a href="./generatebecon.php">
                         <li>
                             <i class="bi bi-patch-plus-fill"></i>
                             <span>Genetare Beacon</span>
@@ -51,8 +51,10 @@
             </div>
         </div>
         <div class='logout'>
-            <i class="bi bi-box-arrow-left"></i>
-            <span>Logout</span>
+            <a href="./logout.php">
+                <i class="bi bi-box-arrow-left"></i>
+                <span>Logout</span>
+            </a>
         </div>
     </section>
 </body>

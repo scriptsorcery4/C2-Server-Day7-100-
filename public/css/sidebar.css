@@ -142,11 +142,15 @@
 .logout{
     padding: 22px 21px;
     background-color: #22262E;
+    transition: all 1.4 ease-in-out;
+}
+
+.logout a{
     color: white;
     display: flex;
     gap: 14px;
     align-items: center;
-    transition: all 1.4 ease-in-out;
+    text-decoration: none;
 }
 
 .logout:hover{
